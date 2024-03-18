@@ -205,7 +205,7 @@ export default function Quiz() {
 		return (
 			<div className="formularz bg-black w-[80%] mx-auto my-[100px] py-[50px] grid xl:grid-cols-[30%_10px_69%] rounded-3xl" id="formularz">
 				<div className="text-center border-b-[2px] border-[crimson] xl:border-0 w-[90%] mx-auto">
-					<h1 className="text-[crimson]   font-bold text-[60px]">Twój Wynik:</h1>
+					<h1 className="text-[crimson] text-[50px] font-inter font-[200]">Twój Wynik:</h1>
 					<div className="">
 					<h2 className="   text-white text-[40px]">
 						<span className="text-[70px]">{score}</span>/{questions.length}

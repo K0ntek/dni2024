@@ -35,7 +35,7 @@ const Navbar =()=>{
 
 
     return(
-      <>
+      <div className="bg-black fixed top-0 w-full h-[60px] z-[99]">
           <div className="w-[30px] fixed top-[1%] right-[1%] md:hidden" onClick={toggleNavbar}>
         <div className={activeIcon} onClick={icon}>
             <div className="line item-1 my-[6px]"></div>
@@ -44,8 +44,16 @@ const Navbar =()=>{
         </div>
         </div>
 
+
+        <Link to="/">
+            <div className="text-white w-fit font-inter space-y-[1px] z-[99] fixed top-[1%] left-[50%] translate-x-[-50%] md:translate-x-0 md:left-[1%]">
+                <h1 className="text-lg text-center text-[#e0e0e0] tracking-[4px] my-auto">ZST<span className="text-[crimson]">i</span>O</h1>
+                <h1 className=" text-[8px] text-center">JAROSŁAW</h1>
+                <div className="w-1/3 h-[1px] rounded-full bg-[crimson] mx-auto"></div>
+            </div>
+        </Link>
+
         <nav className={`fixed top-[40px] md:top-0 left-[100%] md:left-0 w-[80%] bg-black text-white md:w-full h-[100%] md:h-[60px] z-40 overflow-hidden ${activeNavbar}`}>
-            <div></div>
             <ul className='md:flex justify-center mt-[40%] md:mt-0 gap-10'>
                 {Navigation.map((element, key)=>{
                     return(
@@ -57,7 +65,7 @@ const Navbar =()=>{
                 })}
             </ul>
         </nav>
-      </>
+        </div>
     )
 }
 

@@ -24,30 +24,35 @@ const Banner =()=>{
     }
 
     return(
-    <div id="home" className=' header grid 2xl:grid-cols-2 2xl:container mx-auto 2xl:flex-row items-center my-[30px] mt-[60px] font-mono w-[100%] min-h-screen'>
+    <div id="home" className=' header grid 2xl:grid-cols-2 2xl:container mx-auto 2xl:flex-row items-center my-[30px]font-mono w-[100%] min-h-screen'>
         <div className=' banner w-[70%] m-auto lg:w-full text-center'>
-        <h1 className='title text-[25px] sm:text-[40px] w-[80%] mx-auto xl:w-full text-center'>Zespół Szkół Technicznych i Ogólnokształcacych</h1>
+        <h1 className='title text-[25px] sm:text-[50px] w-[80%] mx-auto xl:w-full text-center font-inter font-[600] text-transparent bg-clip-text bg-gradient-to-r from-[#313131] to-black'>Zespół Szkół Technicznych i Ogólnokształcacych</h1>
             <TypeAnimation
                 sequence={[
-                    'Dni otwarte',
+                    'Dni otwarte 2024',
                     2000,
                     '',
                     100
                 ]}
                 repeat={Infinity}
-                className='text-[60px] text-red-800 text-center w-full animation font-extralight h-[200px]'
+                className='text-[60px] text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-red-600 text-center w-full animation font-extralight h-[200px] font-poppins'
             />
-            <p className=' text-[25px]'><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-red-600">"Sapere Aude"</span>- Odważ się być mądrym
-            </p>
-            <h1 onClick={offers} className="text-[30px] text-transparent bg-clip-text bg-gradient-to-r from-red-900 to-pink-600 cursor-pointer p-[10px] hover:bg-gradient-to hover:from-fuchsia-700 hover:to-[crimson]">Oferta na rok 2023/2024</h1>
 
-            <div className='socials flex text-[30px] my-[20px] m-auto justify-center'>
-                <a href="https://www.facebook.com/ZSTiOBANACH/?locale=pl_PL"><GrFacebookOption className='hover:text-red-900 transition-all duration-300 mx-[10px]'/></a>
-                <a href="https://www.instagram.com/zstio.fm/"><GrInstagram className='hover:text-red-900 transition-all duration-300 mx-[10px]'/></a>
-                <a href="https://www.youtube.com/@zstio_fm"><GrYoutube className='hover:text-red-900 transition-all duration-300 mx-[10px]'/></a>
-                <a href="https://www.tiktok.com/@zstio.fm"><FaTiktok className='hover:text-red-900 transition-all duration-300 mx-[10px]'/></a>
+            <p className=' text-[25px]'><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-red-600 font-orbitron font-[100]">"Sapere Aude"</span>- Odważ się być mądrym
+            </p>
+           <div className="w-fit mx-auto group my-3">
+                <h1 onClick={offers} className=" text-[30px] text-transparent bg-clip-text bg-gradient-to-r from-red-900 to-pink-600 cursor-pointer p-[10px] hover:bg-gradient-to hover:from-fuchsia-700 hover:bg-[crimson] hover:tracking-[3px] transition-all duration-300">Oferta na rok <span className=" font-bold text-red-500">2024/2025</span></h1>
+                {/* <div className="group-hover:w-1/3 h-1 rounded-full bg-[#750d22] w-0 mx-auto transition-all duration-150 mt-[-10px]"></div> */}
+           </div>
+           <Link to='/QUIZ'> <button className=' text-[30px] border-[2px] border-[crimson] text-[crimson] px-[45px] py-[15px] mt-[10px] rounded-full mb-[20px] hover:bg-[crimson] hover:text-white transition-all duration-300'>Przejdź do quizu</button></Link>
+            
+           <div className='socials flex text-[30px] my-[20px] m-auto justify-center'>
+                <a href="https://www.facebook.com/ZSTiOBANACH/?locale=pl_PL"><GrFacebookOption className='hover:text-[crimson] transition-all duration-300 mx-[10px]'/></a>
+                <a href="https://www.instagram.com/zstio.fm/"><GrInstagram className='hover:text-[crimson] transition-all duration-300 mx-[10px]'/></a>
+                <a href="https://www.youtube.com/@zstio_fm"><GrYoutube className='hover:text-[crimson] transition-all duration-300 mx-[10px]'/></a>
+                <a href="https://www.tiktok.com/@zstio.fm"><FaTiktok className='hover:text-[crimson] transition-all duration-300 mx-[10px]'/></a>
             </div>
-           <Link to='/QUIZ'> <button className=' text-[30px] border-[2px] border-[crimson] text-[crimson] px-[45px] py-[15px] mt-[10px] rounded-full mb-[20px] bg-gradient-to-r hover:from-fuchsia-700 hover:to-red-700 hover:text-white transition-all duration-300'>Przejdź do quizu</button></Link>
+
             </div>
 
         <div>
