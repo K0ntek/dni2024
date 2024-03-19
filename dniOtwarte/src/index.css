@@ -73,3 +73,16 @@ body {
   color: #794e29;
   background: rgba(0,0,0,.3);
 }
+
+.formWrapper span {
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.formWrapper input:valid~span,
+.formWrapper input:focus~span {
+  transform: translateY(-22px);
+  color: rgb(75, 85, 99);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
