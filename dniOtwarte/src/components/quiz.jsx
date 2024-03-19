@@ -133,10 +133,10 @@ export default function Quiz() {
 	if (!formFilled)
 		return (
 			<div className="my-[100px] w-[80%] m-auto bg-black text-white px-[20px] py-[100px] rounded-3xl justify-center text-center grid xl:grid-cols-[30%_2px_69%]" id="formularz">
-				<div className="form_content border-b-[2px] border-[crimson] xl:border-0 w-[90%] mx-auto">
-					<h1 className=" text-[40px] text-center m-auto py-[50px] w-[60%] xl:w-full">WPROWADŹ DANE, ABY ROZPOCZĄĆ QUIZ O NASZEJ SZKOLE</h1>
+				<div className="form_content border-b-[2px] border-gray-800	 xl:border-0 w-[90%] mx-auto">
+					<h1 className=" text-[45px] mx-auto py-[50px] w-[60%] xl:w-full font-inter font-[100]">WPROWADŹ DANE, ABY ROZPOCZĄĆ QUIZ O NASZEJ SZKOLE</h1>
 				</div>
-				<div className=" w-[2px] h-[100%] ml-[20px] bg-[crimson]"></div>
+				<div className=" w-[2px] h-[100%] ml-[20px] bg-gray-400"></div>
 				<div className="form my-auto ml-[25px]">
 					<div className="justify-center m-auto text-center grid grid-cols-2">
                         <p className="text-[20px] text-right">Imię i nazwisko (opcjonalnie): </p>
@@ -144,7 +144,7 @@ export default function Quiz() {
 						value={name}
 						onChange={(e) => setName(e.target.value)}
 						type="text"
-						className="dane w-[50%] bg-transparent text-white border-b-[2px] border-[crimson] ml-[10px] py-[5px] px-[20px] 
+						className="dane w-[50%] bg-transparent text-white border-b-[2px] border-gray-700 ml-[10px] py-[5px] px-[20px] 
 									focus:outline-none outline-transparent focus:border-white transition-all duration-300"
 						name="dane"
 					/></div>

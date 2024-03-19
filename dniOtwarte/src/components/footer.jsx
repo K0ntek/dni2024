@@ -4,18 +4,18 @@ import {FaTiktok} from 'react-icons/fa'
 
 const Footer =()=>{
     return(
-        <div className="pt-[50px] bg-[#020202] border-t-[4px] border-[#794e29] m-auto justify-center">
+        <div className="pt-[50px] bg-[#020202] border-t-[3px] border-[#291c14] m-auto justify-center">
             <div className="grid md:grid-cols-[20%_50%_30%] mb-5">
 
 
             <div className="text-white w-fit mx-auto font-inter space-y-2 mt-[10%]">
                 <h1 className="text-6xl text-center text-[#e0e0e0] tracking-[4px]">ZST<span className="text-[crimson]">i</span>O</h1>
                 <h1 className=" text-2xl text-center tracking-[2px]">JAROSŁAW</h1>
-                <div className="w-1/3 h-1 rounded-full bg-[#794e29] mx-auto"></div>
+                <div className="w-1/3 h-1 rounded-full bg-[crimson] mx-auto"></div>
             </div>
 
             <div className="text-white sm:w-[70%] text-justify ml-[20%]">
-                <h1 className="text-[20px] border-l-[3px] border-[#794e29] pl-[10px] my-3">KONTAKT</h1>
+                <h1 className="text-[20px] border-l-[3px] border-[#291c14] pl-[10px] my-3">KONTAKT</h1>
                 <p className=" text-[17px] w-[80%]">Zespół Szkół Technicznych
                 i Ogólnokształcących im. Stefana Banacha
                 w Jarosławiu</p>
@@ -39,7 +39,7 @@ const Footer =()=>{
                 styczeń 2023</p>
             </div> */}
             <div className="text-white">
-                <h1 className="text-[20px] border-l-[3px] border-[#794e29] pl-[10px] my-3">MAPA</h1>
+                <h1 className="text-[20px] border-l-[3px] border-[#291c14] pl-[10px] my-3">MAPA</h1>
                 <iframe
 				title="yo"
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d622.6776108412885!2d22.678653387022138!3d50.01709389844757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c9bda79d56527%3A0x5eaeb3e6060f7c83!2zWmVzcMOzxYIgU3prw7PFgiBUZWNobmljem55Y2ggaSBPZ8OzbG5va3N6dGHFgmPEhWN5Y2ggaW0uIFN0ZWZhbmEgQmFuYWNoYQ!5e0!3m2!1spl!2spl!4v1670121725943!5m2!1spl!2spl"

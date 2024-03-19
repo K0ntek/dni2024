@@ -67,28 +67,28 @@ const Offer =()=>{
     },[])
 
     return(
-        <div id="offer" className="offers bg-[#000002] sm:p-[100px] py-[50px]">
-            <div className="w-[90%] mx-auto bg-[#030303] p-6 rounded-3xl">
+        <div id="offer" className="offers bg-[#000003] sm:p-[100px] py-[50px]">
+            <div className="w-[90%] mx-auto bg-[#070707] p-6 rounded-3xl">
                 <div className=" w-[90%] mx-auto sm:w-[100%] grid md:grid-cols-2 xl:grid-cols-3 gap-[8px]">
                     <div className="offer items-center text-center my-auto">
-                        <h2 className="text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#3f3f3f] to-gray-500">OFERTA SZKOŁY</h2>
+                        <h2 className="text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#000000] to-gray-200">OFERTA SZKOŁY</h2>
                         <p className="text-[20px] text-justify w-full sm:w-[80%] mx-auto my-[20px] text-[#f3f3f3]">ZSTiO znajduje się w samym centrum Jarosławia, dzięki temu uczniowie dojeżdżający spoza miasta nie maja kłopotów z dotarciem do szkoły.</p>
-                        <Link to="https://zstiojar.edu.pl/technikum-nr-2-im-stefana-banacha/"><button className=" border-[2px] border-gray-900 text-gray-900 px-[20px] py-[10px] text-[20px] rounded-full hover:bg-gray-900 hover:text-white transition-all duration-300">Dowiedz się więcej</button></Link>
+                        <Link to="https://zstiojar.edu.pl/technikum-nr-2-im-stefana-banacha/"><button className=" border-[2px] border-gray-600 text-gray-600 px-[20px] py-[10px] text-[20px] rounded-full hover:bg-gray-600 hover:text-white transition-all duration-300">Dowiedz się więcej</button></Link>
                     </div>
                     {kierunki.map((kierunek, key)=>{
                         return(
                         //   <Link to={kierunek.link}>
                               <div className=" offer group relative overflow-hidden rounded-3xl">
                                     <div className=" group-hover:scale-125 transition-all duration-500">
-                                        <div index={key}  style={{background: `linear-gradient(80deg, rgba(0,0,0,.1), black),url(${kierunek.img})`,
+                                        <div index={key}  style={{background: `linear-gradient(80deg, rgba(0,0,0,.4), black),url(${kierunek.img})`,
                                             backgroundRepeat: 'no-repeat',
                                             backgroundSize:'cover',
                                             backgroundPosition:'50%',
                                             aspectRatio:'16/9'}}>
                                             <div className="group-hover:bg-gradient-to-r from-black/90 to-gray-950/60 w-full h-full z-40 transition-all">
                                         <div className="relative w-[60%] top-[100%] left-[20%] group-hover:top-[35%] transition-all duration-500 delay-100">
-                                            <h2 className=" text-[20px] text-transparent bg-clip-text bg-gradient-to-r from-gray-300 to-[#585858]">{kierunek.title}</h2>
-                                            <p className="text-white">{kierunek.desc}</p>
+                                            <h2 className=" text-xl text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-[#cfcfcf]">{kierunek.title}</h2>
+                                            <p className="text-white text-[12px]">{kierunek.desc}</p>
                                         </div>
                                     </div>
                                     </div>

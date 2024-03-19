@@ -8,7 +8,8 @@ export default {
     fontFamily: {
       'inter': ['Inter'],
       'poppins': ['Poppins'],
-      'orbitron': ['Orbitron']
+      'orbitron': ['Orbitron'],
+      'megrim':['Megrim']
 
     },
     extend: {},
