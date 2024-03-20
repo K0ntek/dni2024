@@ -26,7 +26,7 @@ const About =()=>{
         },
         {
             startVariable: 0,
-            endVariable: 54,
+            endVariable: 59,
             description: 'Miejsce w Polsce',
         },
         {
@@ -70,13 +70,15 @@ const About =()=>{
 
         <div className=" w-[55%] mx-auto z-[99] grid grid-cols-[45%_55%] gap-3">
                 <div className="bg-[#090909] p-10 rounded-3xl font-inter">
-                    <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#666666] to-[#cfcfcf] font-[400] ml-4">Lorem, ipsum dolor.</h1>
-                    <p className=" font-[200] text-white text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. At blanditiis, modi soluta explicabo molestiae saepe?</p>
+                    <h1 className="text-transparent bg-clip-text bg-gradient-to-r text-4xl from-[#666666] to-[#cfcfcf] font-[400] ml-4">"Sapere aude"</h1>
+                    <p className=" font-[200] text-white text-xl">Odważ się być mądrym</p>
                 </div>
-                <div className="bg-[#090909] p-10 rounded-3xl">
-                    <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#666666] to-[#cfcfcf] font-[400] ml-4">Lorem, ipsum dolor.</h1>
-                    <p className=" font-[200] text-white text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. At blanditiis, modi soluta explicabo molestiae saepe?</p>
+               <a href="https://zstiojar.edu.pl/kierunki/" className=" group">
+                 <div className="bg-[#090909] p-10 rounded-3xl group-hover:bg-[#111] transition-all duration-150">
+                    <h1 className="text-transparent bg-clip-text bg-gradient-to-r text-4xl from-[#666666] to-[#cfcfcf] font-[400] ml-4 group-hover:tracking-[1px] transition-all duration-150">Dlaczego my ?</h1>
+                    <p className=" font-[200] text-white text-xl group-hover:tracking-[2px] transition-all duration-150">SPRAWDŹ SAM</p>
                 </div>
+               </a>
             </div>
 
         </div>

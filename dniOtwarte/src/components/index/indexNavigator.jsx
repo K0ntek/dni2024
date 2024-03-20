@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 
-import { IoPersonSharp, IoHome  } from "react-icons/io5";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai"
-import { VscGraph } from "react-icons/vsc";
+import { IoHome  } from "react-icons/io5";
+import { MdOutlineGraphicEq } from "react-icons/md";
+import { ImParagraphCenter } from "react-icons/im";
 import gsap from "gsap/all";
 import { Timeline } from "gsap/gsap-core";
 
@@ -15,11 +15,11 @@ const IndexNavigator =()=>{
             link: 'home'
         },
         {
-            icon: <IoPersonSharp />,
+            icon: <ImParagraphCenter />,
             link: 'about'
         },
         {
-            icon: <VscGraph />,
+            icon: <MdOutlineGraphicEq />,
             link: 'offer'
         },
         // {

@@ -4,7 +4,10 @@ import {FaTiktok} from 'react-icons/fa'
 
 const Footer =()=>{
     return(
-        <div className="pt-[50px] bg-[#020202] border-t-[3px] border-[#291c14] m-auto justify-center">
+        <div className="pt-[50px] bg-[#020202] m-auto justify-center">
+            <div className="bg-black">
+                <div className="h-[5px] w-1/2 bg-gradient-to-r from-[#383838] to-gray-950 rounded-full mx-auto mb-7"></div>
+            </div>
             <div className="grid md:grid-cols-[20%_50%_30%] mb-5">
 
 

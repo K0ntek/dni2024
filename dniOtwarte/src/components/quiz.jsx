@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Banach from "../stefan_banach_glo970-0-Enhanced-Animated.mp4";
-import ResultsTable from "./ResultsTable";
+import ResultsTable from "./Results";
 
 export default function Quiz() {
 	const [name, setName] = useState("");
@@ -264,7 +264,7 @@ export default function Quiz() {
 					</h2>
 					</div>
 				</div>
-				<div className="w-[2px] h-[100%] bg-gray-800 ml-[-60px] justify-center"></div>
+				<div className="w-[2px] h-full bg-gray-800 ml-[-60px] justify-center"></div>
 				<div>
 					<ResultsTable overflow="scroll" />
 				</div>
@@ -284,6 +284,7 @@ export default function Quiz() {
 							<li key={answer} className="  my-[10px] text-[20px]">
 								<label className="p-[10px] rounded-lg hover:bg-white/20">
 									<input
+										// required="true"
 										type="radio"
 										className="in-radio mr-[10px] accent-gray-800 font-poppins"
 										onChange={(e) => setAnswer(currentQuestion, i2)}

@@ -15,7 +15,7 @@ const Banner =()=>{
     useEffect(()=>{
         gsap.registerPlugin(ScrollTrigger);
         gsap.fromTo('.banner .title, .banner .animation, .banner .text', {x:"-200px", opacity:0}, {x:0, opacity:1, duration:.7, stagger:.2, delay:2, ease:'easeInOut'});
-        gsap.fromTo('.socials a', {x:"100px", opacity:0}, {x:0, opacity:1, duration:.5, stagger:.1, delay:3})
+        gsap.fromTo('.socials a', {x:"100px", opacity:0}, {x:0, opacity:1, duration:.5, stagger:.2, delay:3})
     },[])
 
     const offers=()=>{
@@ -26,7 +26,7 @@ const Banner =()=>{
     return(
     <div id="home" className=' header grid 2xl:grid-cols-2 2xl:container mx-auto 2xl:flex-row items-center font-mono w-full min-h-screen'>
         <div className=' banner w-[70%] m-auto lg:w-full'>
-        <h1 className='title text-[25px] sm:text-[70px] w-[90%] text-center mx-auto xl:w-full font-inter font-[600] text-transparent bg-clip-text bg-gradient-to-r from-[#313131] to-black'>Zespół Szkół Technicznych</h1>
+        <h1 className='title text-[25px] sm:text-[70px] w-[90%] text-center mx-auto xl:w-full font-inter font-[600] text-transparent bg-clip-text bg-gradient-to-r from-[#070707] to-[#000000]'>Zespół Szkół Technicznych</h1>
         <div className=" text-center">
                         <TypeAnimation
                 sequence={[
