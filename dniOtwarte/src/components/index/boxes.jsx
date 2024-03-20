@@ -44,7 +44,7 @@ const BannerAnimation = () =>{
                     </div>
                 </div>
                     <div className="box border-[2px] border-black w-[200px] h-[200px] overflow-hidden p-[4px]">
-                        <div className="bgB w-[220px] h-[220px] bg-black opacity-0"></div>
+                        <div className="bgB w-[220px] h-[220px] bg-black"></div>
                 </div>
              <div className="box border-[2px] border-black w-[200px] h-[200px] relative left-[-200px] mx-[2px]">
                     <div className="Ibox border-[2px] border-black w-[200px] h-[200px] absolute top-0 left-0 p-[4px] my-[2px]">

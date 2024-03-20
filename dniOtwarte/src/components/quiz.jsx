@@ -256,8 +256,8 @@ export default function Quiz() {
 	if (quizFinished) {
 		return (
 			<div className="formularz bg-black w-[80%] mx-auto my-[100px] py-[50px] grid xl:grid-cols-[30%_10px_69%] rounded-3xl" id="formularz">
-				<div className="text-center border-b-[2px] border-gray-800 xl:border-0 w-[90%] mx-auto">
-					<h1 className="text-gray-600 text-[50px] font-inter font-[200]">Twój Wynik:</h1>
+				<div className="text-center border-b-[2px] border-gray-800 xl:border-0 w-[90%] mx-auto mt-[20%]">
+					<h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#ececec] to-[#4e4e4e] text-[50px] font-inter font-[200]">Twój Wynik:</h1>
 					<div className="">
 					<h2 className="   text-white text-[40px]">
 						<span className="text-[70px]">{score}</span>/{questions.length}
@@ -266,7 +266,8 @@ export default function Quiz() {
 				</div>
 				<div className="w-[2px] h-full bg-gray-800 ml-[-60px] justify-center"></div>
 				<div>
-					<ResultsTable overflow="scroll" />
+					<h1 className=" text-center text-3xl font-inter text-transparent bg-clip-text bg-gradient-to-r from-[#ececec] to-[#4e4e4e]">TABELA WYNIKÓW</h1>
+					<ResultsTable/>
 				</div>
 			</div>
 		);

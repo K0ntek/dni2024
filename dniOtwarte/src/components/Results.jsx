@@ -49,7 +49,7 @@ export default function ResultsTable(props) {
 
 	return (
 		<div
-			className="results-wrapper pt-[100px]  min-h-screen"
+			className="results-wrapper my-8"
 			// style={{
 			// 	padding: props.overflow === "hide" ? "5rem" : "",
 			// 	overflowY: props.overflow === "scroll" ? "auto" : "hidden",
@@ -62,7 +62,7 @@ export default function ResultsTable(props) {
 				<div className="circle absolute left-[-3%] bottom-[-2%] border-[5px] border-gray-950 rounded-full w-[6%] aspect-square z-[-1]"></div>
 
 
-				<h1 className=" text-center text-7xl text-black font-[200] tracking-[5px] my-5">WYNIKI</h1>
+				<h1 className=" text-center text-7xl text-black font-[200] tracking-[5px] mb-5 mt-[100px]">WYNIKI</h1>
 				<div className="w-4/5 rounded-3xl bg-[#090909] p-5 mx-auto text-white text-3xl font-inter font-[200] text-center overflow-hidden">
 					<div className=" grid grid-cols-3 my-3">
 									<h1>MIEJSCE</h1>
